@@ -1,0 +1,51 @@
+[project]
+name = "pyraft"
+version = "0.1.0"
+description = "PyRaft is a Python implementation of the Raft distributed consensus protocol. It is designed to be easy to understand, learn, and use. It is not designed to be the fastest or most efficient implementation of Raft, but rather to be a good reference implementation."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = ["aiohttp>=3.11.7"]
+
+[dependency-groups]
+dev = ["debugpy>=1.8.9"]
+
+[tool.ruff.lint]
+extend-select = [
+    "ANN",
+    "ARG",
+    "ASYNC",
+    "B",
+    "C4",
+    "DTZ",
+    "E",
+    "ERA",
+    "EXE",
+    "F",
+    "FAST",
+    "I",
+    "ICN",
+    "INT",
+    "LOG",
+    "N",
+    "PERF",
+    "PIE",
+    "PLC",
+    "PLE",
+    "PLR",
+    "PLW",
+    "PTH",
+    "PYI",
+    "Q",
+    "RSE",
+    "RUF",
+    "S",
+    "SIM",
+    "SLF",
+    "T20",
+    "TID",
+    "UP",
+    "W",
+]
+ignore = ["RET505", "RUF001", "RUF002", "RUF003"]
+[tool.ruff.lint.pydocstyle]
+convention = "google"
