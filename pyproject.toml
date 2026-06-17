@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "PyRaft is a Python implementation of the Raft distributed consensus protocol. It is designed to be easy to understand, learn, and use. It is not designed to be the fastest or most efficient implementation of Raft, but rather to be a good reference implementation."
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = ["aiohttp>=3.14.0"]
+dependencies = ["aiohttp>=3.14.1"]
 
 [dependency-groups]
 dev = ["debugpy>=1.8.9"]
